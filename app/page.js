@@ -9,21 +9,11 @@ export default function Home() {
           <code>app/page.js</code> and the page reloads automatically.
         </p>
         <div className="links">
-          <a
-            className="btn primary"
-            href="https://nextjs.org/docs"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Read the docs
+          <a className="btn primary" href="/login">
+            Tenant sign in
           </a>
-          <a
-            className="btn"
-            href="https://nextjs.org/learn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Learn Next.js
+          <a className="btn" href="/dashboard">
+            Go to dashboard
           </a>
         </div>
       </div>
