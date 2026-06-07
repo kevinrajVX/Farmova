@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { SESSION_COOKIE, verifySession } from "@/lib/auth";
 
 // Protect the dashboard: unauthenticated users are sent to /login.
-export async function middleware(request) {
+export async function proxy(request) {
   const token = request.cookies.get(SESSION_COOKIE)?.value;
   const session = await verifySession(token);
 
